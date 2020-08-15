@@ -1,0 +1,4 @@
+
+curl -XPUT 'localhost:9200/_template/jpcertcc-log-analysis-training' -H 'Content-Type: application/json' --data-binary @handson1_sysmon_template.json
+
+curl -XPOST -H 'Content-Type: application/json' 'localhost:9200/_bulk' --data-binary @handson1_sysmon.json
